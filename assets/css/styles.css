@@ -1,1 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
 
+header {
+    display: flex;
+    justify-content: space-between;
+    
+    background: #FFF8F6;
+    padding: 40px;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(67, 57, 57);
+}
+
+header .logo a{
+    font-size: xx-large;
+    color: #EF583B;
+    font-weight: semi-bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu-items a {
+    padding-left: 20px;
+    font-size: larger;
+}
+
+.menu-items a:hover{
+    color: #EF583B;
+}
