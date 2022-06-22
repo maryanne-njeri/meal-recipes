@@ -46,12 +46,54 @@ header .logo a{
 
 main {
     position: absolute;
-    top: 140;
+    top: 120;
     padding: 60px;
-
 }
 
+.hero-header {
+    display: flex;
+    justify-content: space-around;
+}
 
+.hero-img{
+    align-items: center;
+}
+
+.hero-text {
+    background-color: #FEE8E3;
+    width: 60%;
+    padding-left: 20px;
+    margin-right: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-text h1 {
+    margin-bottom: 30px;
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+input {
+    padding: 6px 8px;
+    color: rgb(179, 175, 175);
+    border: none;
+}
+
+.btn-search {
+    background-color: #EF583B;
+    color: #fff;
+    font-weight: semi-bold;
+    padding: 6px 8px;
+    border: none;
+}
+
+.hero-text p {
+    font-size: x-large;
+}
 
 
 
