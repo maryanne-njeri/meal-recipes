@@ -5,12 +5,20 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* header */
+
 header {
     display: flex;
     justify-content: space-between;
-    
-    background: #FFF8F6;
-    padding: 40px;
+    align-items: center;
+    padding: 40px 60px;
+    overflow: hidden;
+    /* box-shadow: 0 0.5rem 1rem #c89389; */
+    background-color: #FEE8E3;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;    
 }
 
 header a {
@@ -33,3 +41,17 @@ header .logo a{
 .menu-items a:hover{
     color: #EF583B;
 }
+
+/* main */
+
+main {
+    position: absolute;
+    top: 140;
+    padding: 60px;
+
+}
+
+
+
+
+
