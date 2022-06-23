@@ -95,6 +95,9 @@ input {
     font-weight: semi-bold;
     padding: 6px 8px;
     border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-left: -2px;
 }
 
 .hero-text p {
@@ -127,12 +130,17 @@ input {
     margin-top: 20px;
 }
 
-.card-item button {
+.card-link-holder {
+    margin: 10px 0;
+}
+
+.card-item a {
+    text-decoration: none;
     background: #EF583B;
     padding: 6px 12px;
     border: none;
+    color: #fff;
     border-radius: 5px;
-    margin: 10px 0;
 }
 
 /* Featured */
@@ -154,13 +162,8 @@ input {
     font-weight: 400;
     line-height: 40px;
     letter-spacing: 0em;
-    /* padding-left: 50px; */
     text-align: left;
 
-}
-
-.feature-content blockquote {
-    /* padding-left: 50px; */
 }
 
 .feature-content img {
@@ -196,4 +199,5 @@ input {
     border: none;
     border-radius: 5px;
     margin: 10px 0;
+    color: #fff;
 }

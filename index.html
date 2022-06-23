@@ -33,7 +33,7 @@
                 <h1>Find meals for your ingredients</h1>
                 <form action="">
                     <input type="text" placeholder="find recipe">
-                    <button class="btn-search">
+                    <button type="submit" class="btn-search">
                         Search
                     </button>
                 </form>
@@ -44,28 +44,34 @@
         <!-- Results section -->
         <section class="results">
             <div>
-                <h3>Search your result</h3>
+                <h3>Your search results:</h3>
             </div>
-            <div class="cards">
-                <div class="card-item">
-                    <img src="./assets/images/africanfood.jpg" alt="food">
-                    <div class="description">
+            <div class="cards"> <!--meal-->
+                <div class="card-item"> <!--meal item-->
+                    <img src="./assets/images/africanfood.jpg" alt="food"> <!--meal img-->
+                    <div class="description"> <!--meal name-->
                         <h4>Rice Beef</h4>
-                        <button>Get recipe</button>
+                        <div class="card-link-holder">
+                            <a href="#" class="recipe-btn">Get Recipe</a>
+                        </div>
                     </div>
                 </div>
                 <div class="card-item">
                     <img src="./assets/images/africanfood.jpg" alt="food">
                     <div class="description">
                         <h4>Rice Beef</h4>
-                        <button>Get recipe</button>
+                        <div class="card-link-holder">
+                            <a href="#" class="recipe-btn">Get Recipe</a>
+                        </div>
                     </div>
                 </div>
                 <div class="card-item">
                     <img src="./assets/images/africanfood.jpg" alt="food">
                     <div class="description">
                         <h4>Rice Beef</h4>
-                        <button>Get recipe</button>
+                        <div class="card-link-holder">
+                            <a href="#" class="recipe-btn">Get Recipe</a>
+                        </div>
                     </div>
                 </div>
             </div>
