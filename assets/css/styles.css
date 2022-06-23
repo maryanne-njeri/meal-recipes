@@ -105,3 +105,36 @@ input {
 .hero-text p {
     font-size: x-large;
 }
+
+.results h3 {
+    margin: 60px 0;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.card-item {
+    width: 30%;
+}
+
+.card-item img {
+    width: 100%;
+}
+
+.card-item .description {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card-item button {
+    background: #EF583B;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
