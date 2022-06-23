@@ -78,11 +78,6 @@ main {
     border-radius: 5px;
 }
 
-.hero-text h1 {
-    /* margin-top: 50px;
-    margin-bottom: 30px; */
-}
-
 form {
     /* margin-bottom: 30px; */
     padding: 30px;
@@ -134,7 +129,7 @@ input {
 
 .card-item button {
     background: #EF583B;
-    padding: 4px 8px;
+    padding: 6px 12px;
     border: none;
     border-radius: 5px;
     margin: 10px 0;
@@ -142,12 +137,13 @@ input {
 
 /* Featured */
 
-/* .features h3 {
+.features h3 {
     margin: 60px 0;
 }
 
 .feature-content {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -158,15 +154,46 @@ input {
     font-weight: 400;
     line-height: 40px;
     letter-spacing: 0em;
-    padding-left: 50px;
+    /* padding-left: 50px; */
+    text-align: left;
 
 }
 
 .feature-content blockquote {
-    padding-left: 50px;
+    /* padding-left: 50px; */
 }
 
 .feature-content img {
     width: 100%;
     border-radius: 5px;
-} */
+}
+
+/* Footer */
+
+.footer {
+    padding: 60px;
+    margin-top: 150px;
+    background: #FFF8F7;
+}
+
+.footer h3 {
+    margin-bottom: 40px;
+}
+
+.footer input[type=text], input[type=email] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.footer button {
+    background: #EF583B;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+}
