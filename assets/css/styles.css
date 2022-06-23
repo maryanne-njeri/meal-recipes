@@ -106,6 +106,8 @@ input {
     font-size: x-large;
 }
 
+/* Results */
+
 .results h3 {
     margin: 60px 0;
 }
@@ -138,3 +140,33 @@ input {
     margin: 10px 0;
 }
 
+/* Featured */
+
+/* .features h3 {
+    margin: 60px 0;
+}
+
+.feature-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.feature-content p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+    padding-left: 50px;
+
+}
+
+.feature-content blockquote {
+    padding-left: 50px;
+}
+
+.feature-content img {
+    width: 100%;
+    border-radius: 5px;
+} */
