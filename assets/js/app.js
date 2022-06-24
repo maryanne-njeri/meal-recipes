@@ -5,9 +5,15 @@ let btnSearch = document.querySelector('.btn-search');
 const listOfMeals = document.getElementById('card');
 const detailedContent = document.querySelector('.detailed-content');
 let formError = document.querySelector('.error');
+let fullName = document.getElementById('full-name');
+let userEmail = document.getElementById('email');
+let contactBtn = document.querySelector('.contact-btn');
+let contactInfo = document.querySelector('.info-results');
+
 
 // Listening to Event
 btnSearch.addEventListener('click', getMealList);
+contactBtn.addEventListener('click', getContactInfo)
 
 function getMealList() {
     let searchInput = document.getElementById('search-input');
@@ -49,4 +55,23 @@ function getMealList() {
 
         listOfMeals.innerHTML = html;
     });
+}
+
+function getContactInfo(event) {
+    event.preventDefault();
+
+    console.log(fullName.value);
+    fullName = fullName.value.trim();
+
+    userEmail = userEmail.value.trim();
+
+    let html = ''
+
+    html = `
+        <h3>Hello <em>${fullName},</em> thank you for contacting us!</h3>
+            <div>Name: <span>${fullName}</span></div>
+        <div>Email address: <span>${userEmail}</span></div>
+    `
+
+    contactInfo.innerHTML = html;
 }
