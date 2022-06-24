@@ -35,7 +35,7 @@ function getMealList() {
                 `;
             });
         } else {
-            html = 'Sorry, your search did not match our record!';
+            html = `<p style="color: red;">Sorry, your search did not match our record!</p>`;
         }
 
         listOfMeals.innerHTML = html;
