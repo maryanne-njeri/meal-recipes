@@ -113,12 +113,14 @@ input {
 .cards {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    /* width: 100%; */
+    flex-wrap: wrap;
     
 }
 
 .card-item {
-    width: 30%;
+    flex: 1 0 30%;
+    margin: 30px 15px;
 }
 
 .card-item img {

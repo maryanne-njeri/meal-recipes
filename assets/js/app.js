@@ -15,6 +15,26 @@ function getMealList() {
     fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchInput}`)
     .then(res => res.json())
     .then(data => {
-        console.log(data);
-    })
+        // console.log(data.meals[0].idMeal);
+        let html = '';
+
+        if (data.meals) {
+            data.meals.forEach(meal => {
+                // console.log(meal);
+                html += `
+                    <div class="card-item" data-id="${meal.idMeal}">
+                        <img src="${meal.strMealThumb}" alt="food">
+                        <div class="description">
+                            <h4>${meal.strMeal}</h4>
+                            <div class="card-link-holder">
+                                <a href="#" class="recipe-btn">Get Recipe</a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+        }
+
+        listOfMeals.innerHTML = html;
+    });
 }
