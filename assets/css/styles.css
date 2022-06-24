@@ -80,11 +80,25 @@ main {
     border-radius: 5px;
 }
 
+.hero-header h1 {
+    margin-bottom: 20px;
+}
+
 input {
     padding: 6px 8px;
     color: rgb(179, 175, 175);
     border: none;
-    margin: 20px 0;
+}
+
+.hero-p {
+    margin-top: 20px;
+}
+
+.error {
+    font-size: small;
+    color: red;
+    margin-left: -180px;
+    padding-top: 5px;
 }
 
 .btn-search {

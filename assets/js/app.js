@@ -4,6 +4,7 @@
 let btnSearch = document.querySelector('.btn-search');
 const listOfMeals = document.getElementById('card');
 const detailedContent = document.querySelector('.detailed-content');
+let formError = document.querySelector('.error');
 
 // Listening to Event
 btnSearch.addEventListener('click', getMealList);
@@ -17,6 +18,14 @@ function getMealList() {
     .then(data => {
         // console.log(data.meals[0].idMeal);
         let html = '';
+
+        if (searchInput == "") {
+            formError.innerHTML = `
+                <span>Meal must be filled out!</span>
+            `
+        } else if (searchInput != '') {
+            formError.innerHTML = ''
+        }
 
         if (data.meals) {
             data.meals.forEach(meal => {
