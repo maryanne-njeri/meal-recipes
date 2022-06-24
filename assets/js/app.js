@@ -60,7 +60,6 @@ function getMealList() {
 function getContactInfo(event) {
     event.preventDefault();
 
-    console.log(fullName.value);
     fullName = fullName.value.trim();
 
     userEmail = userEmail.value.trim();
