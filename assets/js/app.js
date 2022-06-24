@@ -1,9 +1,14 @@
 // Fetch the data
 
-const fetchData = () => {
-    fetch('https://www.themealdb.com/api/json/v1/1/filter.php?i=egg')
-    .then(res => res.json())
-    .then(meals => console.log(meals))
-}
-fetchData()
+// Selecting Dom Elements
+const btnSearch = document.querySelector('.btn-search');
+const listOfMeals = document.getElementById('card');
+const detailedContent = document.querySelector('.detailed-content');
+const searchInput = document.getElementById('search-input');
+
+btnSearch.addEventListener('click', function() {
+    searchInput.value;
+
+    console.log(searchInput);
+});
 

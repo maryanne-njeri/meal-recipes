@@ -193,6 +193,36 @@ input {
     box-sizing: border-box;
 }
 
+.detailed-content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.recipe-title {
+    margin-bottom: 24px;
+}
+
+.category {
+    margin-bottom: 24px;
+}
+
+.instruction h3 {
+    margin-bottom: 24px;
+}
+
+.instruction p {
+    margin-bottom: 24px;
+}
+
+.recipe-meal-img img{
+    width: 200px;
+    margin-bottom: 24px;
+}
+
+
 .footer button {
     background: #EF583B;
     padding: 6px 12px;
