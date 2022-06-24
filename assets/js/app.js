@@ -12,7 +12,7 @@ function getMealList() {
     let searchInput = document.getElementById('search-input');
     searchInput = searchInput.value.trim(); // trim clears whitespaces
     
-    fetch('https://www.themealdb.com/api/json/v1/1/filter.php?i=egg')
+    fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchInput}`)
     .then(res => res.json())
     .then(data => {
         console.log(data);
