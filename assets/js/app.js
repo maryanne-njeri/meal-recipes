@@ -21,6 +21,7 @@ function getMealList() {
         if (data.meals) {
             data.meals.forEach(meal => {
                 // console.log(meal);
+                
                 html += `
                     <div class="card-item" data-id="${meal.idMeal}">
                         <img src="${meal.strMealThumb}" alt="food">
@@ -33,6 +34,8 @@ function getMealList() {
                     </div>
                 `;
             });
+        } else {
+            html = 'Sorry, your search did not match our record!';
         }
 
         listOfMeals.innerHTML = html;
