@@ -12,13 +12,20 @@ const detailedContent = document.querySelector('.detailed-content');
 let formError = document.querySelector('.error');
 let fullName = document.getElementById('full-name');
 let userEmail = document.getElementById('email');
-let contactBtn = document.querySelector('.contact-btn');
+// let contactBtn = document.querySelector('.contact-btn');
+let contactForm = document.getElementById("myForm");
 let contactInfo = document.querySelector('.info-results');
+let heroImage = document.querySelector('.hero-img');
 
 
 // Listening to Event
 btnSearch.addEventListener('click', getMealList);
-contactBtn.addEventListener('click', getContactInfo)
+contactForm.addEventListener('submit', getContactInfo)
+window.addEventListener('load', function() {
+    heroImage.innerHTML = `
+        <img src="./assets/images/africanfood.jpg" alt="food pic">
+    `
+})
 
 function getMealList() {
     let searchInput = document.getElementById('search-input');

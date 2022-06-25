@@ -26,9 +26,7 @@
     <main>
         <!-- Hero-header -->
         <div class="hero-header">
-            <div class="hero-img">
-                <img src="./assets/images/africanfood.jpg" alt="food pic">
-            </div>
+            <div class="hero-img"></div> <!--show image onload-->>
             <div class="hero-text">
                 <h1>Find meals for your ingredients</h1>
                 <div>
@@ -104,15 +102,17 @@
             <div id="contact">
                 <h3>Contact Me</h3>
             </div>
-            <div>
-                <input type="text" name="full-name" id="full-name" placeholder="Enter your fullnames">
-            </div>
-            <div>
-                <input type="email" name="email" id="email" placeholder="Enter email" required="required">
-            </div>
-            <div>
-                <button type="submit" class="contact-btn">Send</button>
-            </div>
+            <form id="myForm" action="">
+                <div>
+                    <input type="text" name="full-name" id="full-name" placeholder="Enter your fullnames">
+                </div>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Enter email" required="required">
+                </div>
+                <div>
+                    <button type="submit" class="contact-btn">Send</button>
+                </div>
+            </form>
         </div>
         <div class="contact-info">
             <div class="info-results">
