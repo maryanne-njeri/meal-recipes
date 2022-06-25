@@ -1,3 +1,8 @@
+// toggleBar
+
+
+
+
 // Fetch the data
 
 // Selecting Dom Elements
