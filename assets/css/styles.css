@@ -30,6 +30,10 @@ header a {
     color: rgb(67, 57, 57);
 }
 
+.menu-bars {
+    display: none;
+}
+
 header .logo a{
     font-size: xx-large;
     color: #EF583B;
@@ -272,4 +276,235 @@ input {
     border-radius: 5px;
     margin: 10px 0;
     color: #fff;
+}
+
+@media only screen and (max-width: 320px) {
+
+    /* header */
+    header {
+        padding: 10px 20px;   
+    }
+
+    header .logo a{
+        font-size: x-large;
+        font-weight: bold;
+    }
+
+    .menu-items {
+        display: none;
+    }
+
+    .menu-bars {
+        display: block;
+    }
+
+    /* main */
+
+main {
+    top: 40;
+    padding: 20px;
+}
+
+.hero-img{
+    display: none;
+}
+
+.hero-text {
+    width: 100%;
+    padding: 30px 20px;
+    border-radius: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 6px 8px;
+    color: rgb(179, 175, 175);
+    border: none;
+}
+
+.error {
+    margin-left: -90px;
+}
+
+.btn-search {
+    width: 100%;
+    font-weight: bold;
+    padding: 6px 8px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 0;
+}
+
+.hero-text h1 {
+    font-size: large;
+}
+
+.hero-text p {
+    font-size:small;
+}
+
+/* Results */
+
+.results h3 {
+    margin-top: 30px;
+    margin-bottom: -15px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    /* width: 100%; */
+    flex-wrap: wrap;
+    
+}
+
+.card-item {
+    flex: 1 100%;
+    margin: 30px 0;
+}
+
+.card-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card-item .description {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card-link-holder {
+    margin: 10px 0;
+}
+
+.card-item a {
+    text-decoration: none;
+    background: #EF583B;
+    padding: 6px 12px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Featured */
+
+.features h3 {
+    margin-top: 50px 0;
+    margin-bottom: 15px;
+}
+
+.feature-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.feature-content p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 10px;
+
+}
+
+.feature-content img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+/* about */
+.about-content {
+    flex-direction: column;
+    width: 100%;
+}
+
+.about-content img {
+    width: 100%;
+}
+
+.about-content div:first-child {
+    margin-right: 60px;
+}
+
+/* Footer */
+
+.footer {
+    padding: 30px 10px;
+    margin-top: 40px;
+    background: #FFF8F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-info {
+    flex: 1 100%;
+    margin: 10px;
+}
+
+.info-results {
+    text-align: left;
+    padding: 20px 10px;
+}
+
+.footer h3 {
+    margin-bottom: 30px;
+}
+
+.footer input[type=text], input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.detailed-content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.recipe-title {
+    margin-bottom: 24px;
+}
+
+.category {
+    margin-bottom: 24px;
+}
+
+.instruction h3 {
+    margin-bottom: 24px;
+}
+
+.instruction p {
+    margin-bottom: 24px;
+}
+
+.recipe-meal-img img{
+    width: 200px;
+    margin-bottom: 24px;
+}
+
+
+.footer button {
+    background: #EF583B;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    color: #fff;
+}
+
 }
